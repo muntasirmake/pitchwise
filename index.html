@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PitchWise — The pitch deck rebuild system for founders</title>
+<meta name="description" content="Rebuild your pitch deck using the narrative patterns, slide structures, and investor signals found in top-funded startup decks." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="#top" aria-label="PitchWise home">
+      <span class="mark" aria-hidden="true"></span>
+      PitchWise
+    </a>
+
+    <div class="nav-right">
+      <a class="btn btn-primary btn-sm" href="#get">Get Pitch OS</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h14M3 10h14M3 14h14"/></svg>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a class="btn btn-primary" href="#get">Get PitchWise</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="container hero-inner">
+    <span class="badge"><span class="dot"></span> Built from studying startup decks behind $1B+ in funding</span>
+    <h1 class="h-display reveal">Build an investor-grade pitch deck in 30 minutes.</h1>
+    <p class="lede reveal">We help founders rebuild their pitch deck using the same narrative patterns, slide structures, and investor signals found in top-funded startup decks.</p>
+    <div class="hero-ctas reveal">
+      <a class="btn btn-primary" href="#get">Get Pitch OS</a>
+      <a class="btn btn-secondary" href="#free-audit">Get a Free Deck Audit</a>
+    </div>
+
+    <!-- ===== IMAGE CAROUSEL ===== -->
+    <div class="carousel-wrap reveal">
+      <div class="carousel">
+        <div class="carousel-track" id="carouselTrack">
+          <div class="carousel-slide"><img src="images/PW1.jpg" alt="PitchWise screen 1" /></div>
+          <div class="carousel-slide"><img src="images/PW2.jpg" alt="PitchWise screen 2" /></div>
+          <div class="carousel-slide"><img src="images/PW3.jpg" alt="PitchWise screen 3" /></div>
+          <div class="carousel-slide"><img src="images/PW4.jpg" alt="PitchWise screen 4" /></div>
+        </div>
+      </div>
+      <div class="carousel-dots" id="carouselDots">
+        <button class="cdot active" data-idx="0" aria-label="Slide 1"></button>
+        <button class="cdot" data-idx="1" aria-label="Slide 2"></button>
+        <button class="cdot" data-idx="2" aria-label="Slide 3"></button>
+        <button class="cdot" data-idx="3" aria-label="Slide 4"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROBLEM ===================== -->
+<section class="section-pad" id="problem">
+  <div class="container two-col">
+    <div class="sec-head">
+      <span class="eyebrow no-rule">The real problem</span>
+      <h2 class="h-lg reveal">Your startup may be strong. Your deck may be making it look average.</h2>
+      <p class="lede reveal">Investors do not read decks like customers read websites. They scan for signals: a clear problem, a sharp market, credible traction, and a story that feels fundable.</p>
+      <p class="lede reveal" style="margin-top:14px;">PitchWise helps you rebuild your deck around the signals investors actually look for.</p>
+      <a class="btn btn-primary reveal" href="#get" style="margin-top:24px;">Get Pitch OS <svg class="arrow" width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7.5h8M7.5 4l3.5 3.5L7.5 11"/></svg></a>
+    </div>
+    <div>
+      <div class="mock-label" style="margin-bottom:14px;">What investors scan for</div>
+      <div class="signal-grid">
+        <div class="signal-pill"><span class="sp-ic"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="6" cy="6" r="4.5"/><path d="M6 3.5v2.5l1.6 1"/></svg></span> Clear problem</div>
+        <div class="signal-pill"><span class="sp-ic"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M1.5 9 4.5 5l2.2 2.2L10.5 3"/></svg></span> Sharp market</div>
+        <div class="signal-pill"><span class="sp-ic"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 1.5v4M6 7.5v.5M3 2.5l1.5 1.5M9 2.5 7.5 4"/></svg></span> Urgent timing</div>
+        <div class="signal-pill"><span class="sp-ic"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M1.5 8.5 4 6l2 1.5L10.5 3.5"/><path d="M8 3.5h2.5V6"/></svg></span> Credible traction</div>
+        <div class="signal-pill"><span class="sp-ic"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2 3h8M2 6h8M2 9h5"/></svg></span> Strong narrative</div>
+        <div class="signal-pill"><span class="sp-ic"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 1.5 10.5 4v4L6 10.5 1.5 8V4z"/></svg></span> Inevitable insight</div>
+        <div class="signal-pill"><span class="sp-ic"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2 9.5h8M4 6.5h4M3 3.5h6M6 6.5V9.5"/></svg></span> Fundable model</div>
+        <div class="signal-pill"><span class="sp-ic"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="6" cy="6" r="4.5"/><path d="M4.5 6.5 6 8l3-4"/></svg></span> Investor-ready clarity</div>
+        <div class="signal-pill"><span class="sp-ic"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="5" cy="4" r="2"/><path d="M2 10c0-2.2 1.3-3.5 3-3.5s3 1.3 3 3.5"/><path d="M8.5 5.5 10 7l1.5-1.5"/></svg></span> Strong founder-market fit</div>
+        <div class="signal-pill"><span class="sp-ic"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2 9 5 6l2 2 3-5"/><path d="M9 3h2.5v2.5"/></svg></span> Clear path to scale</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container"><div class="divider"></div></div>
+
+<!-- ===================== PRODUCT INTRO ===================== -->
+<section class="section-pad" id="product">
+  <div class="container">
+    <div class="sec-head center">
+      <span class="eyebrow no-rule" style="justify-content:center;">INTRODUCING PITCHWISE PITCH SYSTEM</span>
+      <h2 class="h-lg reveal">The pitch deck rebuild system for founders who want an investor-grade deck.</h2>
+      <p class="lede reveal">PitchWise gives you a practical system to analyze, rewrite, and restructure your startup deck using patterns from funded companies. It's built for early-stage founders preparing for investor meetings, demo days, accelerators, and fundraising conversations.</p>
+    </div>
+    <div class="mt-section" style="display:flex;justify-content:center;gap:8px;flex-wrap:wrap;">
+      <span class="tag">Investor meetings</span>
+      <span class="tag">Demo days</span>
+      <span class="tag">Accelerators</span>
+      <span class="tag">Fundraising conversations</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WHAT YOU GET ===================== -->
+<section class="section-pad" id="what-you-get" style="background:#fff;border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow no-rule">What you get</span>
+      <h2 class="h-lg reveal">Everything you need to rebuild your pitch deck at investor standard.</h2>
+      <p class="lede reveal" style="margin-top:14px;">Pitch OS gives founders the same structure, narrative logic, and investor signal patterns found in high-performing startup decks — packaged into a practical system you can apply to your own deck.</p>
+    </div>
+    <div class="cards-3 mt-section">
+      <article class="feature-card reveal">
+        <div class="fc-ic"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 3h9l3 3v11H4z"/><path d="M13 3v3h3M7 10h6M7 13h4"/></svg></div>
+        <span class="fc-num">01</span>
+        <h3 class="h-sm">Winning Deck Pattern Playbook</h3>
+        <p>A teardown of what strong startup decks consistently get right — from the opening slide to the problem, market, product, traction, business model, team, and ask.</p>
+        <p class="fc-body2">Instead of guessing what investors want to see, you get a clear section-by-section breakdown of the signals that make a deck feel sharp, fundable, and hard to ignore.</p>
+        <div class="fc-meta"><span class="fc-meta-pill">PLAYBOOK</span><span class="fc-meta-pill">7 CORE SECTIONS</span><span class="fc-meta-pill">INVESTOR SIGNALS</span></div>
+      </article>
+      <article class="feature-card reveal">
+        <div class="fc-ic"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="14" height="12" rx="1.5"/><path d="M3 8h14M7 4v12"/></svg></div>
+        <span class="fc-num">02</span>
+        <h3 class="h-sm">Investor-Grade Deck Template</h3>
+        <p>A clean, structured pitch deck template designed to help you present your startup with clarity, confidence, and narrative momentum.</p>
+        <p class="fc-body2">Use it to rebuild your deck around the logic investors expect: clear problem, sharp market, strong insight, credible traction, scalable business model, and a compelling ask.</p>
+        <div class="fc-meta"><span class="fc-meta-pill">TEMPLATE</span><span class="fc-meta-pill">STRUCTURED FLOW</span><span class="fc-meta-pill">READY TO CUSTOMIZE</span></div>
+      </article>
+      <article class="feature-card reveal">
+        <div class="fc-ic"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 2.5 12 6l3.8.4-2.8 2.6.8 3.8L10 11l-3.6 1.8.8-3.8L4.4 6.4 8 6z"/><path d="M10 13v4.5M7 16h6"/></svg></div>
+        <span class="fc-num">03</span>
+        <h3 class="h-sm">AI Rebuild Skill Files</h3>
+        <p>A set of AI-ready prompt files you can upload to ChatGPT or Claude to help rewrite your deck slide by slide.</p>
+        <p class="fc-body2">Use them to sharpen your story, improve slide flow, pressure-test your investor narrative, prepare Q&amp;A, and turn scattered founder thinking into a tighter fundraising case.</p>
+        <div class="fc-meta"><span class="fc-meta-pill">PROMPT FILES</span><span class="fc-meta-pill">CHATGPT / CLAUDE</span><span class="fc-meta-pill">SLIDE-BY-SLIDE REBUILD</span></div>
+      </article>
+    </div>
+    <div style="display:flex;justify-content:center;margin-top:56px;">
+      <a class="btn btn-primary reveal" href="#get">Get Pitch OS <svg class="arrow" width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7.5h8M7.5 4l3.5 3.5L7.5 11"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CREDIBILITY / PATTERN ===================== -->
+<section class="section-pad" id="patterns">
+  <div class="container cred">
+    <div class="sec-head center">
+      <span class="eyebrow no-rule" style="justify-content:center;">Built from real fundraising patterns</span>
+      <h2 class="h-lg reveal">We studied the decks behind breakout startups and mapped the patterns that repeat.</h2>
+      <p class="lede reveal">The goal is not a generic "pretty deck." The goal is to help your deck feel fundable.</p>
+    </div>
+    <div class="adjective-row reveal">
+      <span class="adj">Clearer.</span>
+      <span class="adj">Sharper.</span>
+      <span class="adj">More credible.</span>
+      <span class="adj">Harder to ignore.</span>
+    </div>
+    <div class="pattern-strip reveal">
+      <div class="pattern-cell"><div class="pc-n">01</div><div class="pc-l">Problem</div><div class="pc-bar"><i style="--w:88%"></i></div></div>
+      <div class="pattern-cell"><div class="pc-n">02</div><div class="pc-l">Market</div><div class="pc-bar"><i style="--w:76%"></i></div></div>
+      <div class="pattern-cell"><div class="pc-n">03</div><div class="pc-l">Product</div><div class="pc-bar"><i style="--w:82%"></i></div></div>
+      <div class="pattern-cell"><div class="pc-n">04</div><div class="pc-l">Traction</div><div class="pc-bar"><i style="--w:64%"></i></div></div>
+      <div class="pattern-cell"><div class="pc-n">05</div><div class="pc-l">Model</div><div class="pc-bar"><i style="--w:71%"></i></div></div>
+      <div class="pattern-cell"><div class="pc-n">06</div><div class="pc-l">The ask</div><div class="pc-bar"><i style="--w:90%"></i></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FREE AUDIT ===================== -->
+<section class="section-pad audit-section" id="free-audit">
+  <div class="container audit-grid">
+    <div>
+      <span class="eyebrow no-rule">Free deck audit</span>
+      <h2 class="h-lg reveal" style="margin-top:16px;">Not sure where your deck stands?</h2>
+      <p class="lede reveal" style="margin-top:14px;">Upload your current pitch deck and we'll show you where it's losing investor attention - a clear review of the biggest gaps in your narrative, structure, clarity, and investor-readiness.</p>
+      <div class="audit-list">
+        <div class="audit-point reveal"><span class="ap-ic"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2.5 6.5 5 9l4.5-5.5"/></svg></span><p><strong>No generic feedback.</strong> Specific to your deck and your stage.</p></div>
+        <div class="audit-point reveal"><span class="ap-ic"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2.5 6.5 5 9l4.5-5.5"/></svg></span><p><strong>No vague advice.</strong> The exact fixes that move investor perception.</p></div>
+        <div class="audit-point reveal"><span class="ap-ic"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2.5 6.5 5 9l4.5-5.5"/></svg></span><p><strong>Just the priorities.</strong> The most important fixes before investors see it.</p></div>
+      </div>
+      <a class="btn btn-primary reveal" href="#get" style="margin-top:26px;">Get a Free Deck Audit <svg class="arrow" width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7.5h8M7.5 4l3.5 3.5L7.5 11"/></svg></a>
+    </div>
+
+    <!-- diagnostic card -->
+    <div class="diag reveal">
+      <div class="diag-head">
+        <div class="upic"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 3h7l3 3v11H5z"/><path d="M12 3v3h3"/><path d="M10 13V8.5M8 10.5 10 8.5l2 2"/></svg></div>
+        <div>
+          <div class="fname">your-deck.pdf</div>
+          <div class="fmeta">14 slides · uploaded</div>
+        </div>
+        <span class="ok-badge">Analyzed</span>
+      </div>
+      <div class="diag-body">
+        <div class="diag-row"><span class="dr-name">Narrative gaps</span><span class="dr-track"><i data-w="46%" class="warn"></i></span><span class="dr-val">3 found</span></div>
+        <div class="diag-row"><span class="dr-name">Story flow</span><span class="dr-track"><i data-w="58%" class="warn"></i></span><span class="dr-val">weak</span></div>
+        <div class="diag-row"><span class="dr-name">Market logic</span><span class="dr-track"><i data-w="74%"></i></span><span class="dr-val">ok</span></div>
+        <div class="diag-row"><span class="dr-name">Traction framing</span><span class="dr-track"><i data-w="40%" class="warn"></i></span><span class="dr-val">soft</span></div>
+        <div class="diag-row"><span class="dr-name">Investor-readiness</span><span class="dr-track"><i data-w="62%"></i></span><span class="dr-val">review</span></div>
+      </div>
+      <div class="diag-foot">
+        <div>
+          <div class="pf-k">Priority fixes</div>
+          <div class="pf-v">4 high-impact changes</div>
+        </div>
+        <div class="pf-score">
+          <div class="pf-k">Audit result</div>
+          <div class="n"><span data-count2="58">0</span><span>/100</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WHO IT'S FOR ===================== -->
+<section class="section-pad" id="who-its-for">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow no-rule">Who this is for</span>
+      <h2 class="h-lg reveal">Built for founders in the middle of the work.</h2>
+    </div>
+    <div class="who-grid">
+      <div class="who-item reveal"><span class="wi-n">01</span><p>Have an existing deck but know it's not strong enough yet.</p></div>
+      <div class="who-item reveal"><span class="wi-n">02</span><p>Are preparing for demo day, investor outreach, or fundraising.</p></div>
+      <div class="who-item reveal"><span class="wi-n">03</span><p>Need a clearer startup narrative that holds together.</p></div>
+      <div class="who-item reveal"><span class="wi-n">04</span><p>Want to understand what funded decks do differently.</p></div>
+      <div class="who-item reveal"><span class="wi-n">05</span><p>Don't want to spend weeks figuring out deck structure from scratch.</p></div>
+      <div class="who-item reveal" style="background:var(--text);box-shadow:none;"><span class="wi-n" style="color:var(--teal);">06</span><p style="color:rgba(255,255,255,0.82);">Want the deck to look as sharp as the company actually is.</p></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================== STRONG DECK STATEMENT ===================== -->
+<section class="section-pad-sm">
+  <div class="container">
+    <div class="sec-head center">
+      <span class="eyebrow no-rule" style="justify-content:center;">A strong startup deserves a strong deck</span>
+      <h2 class="h-md reveal" style="margin-top:14px;max-width:640px;">Your pitch deck won't raise money by itself - but a weak deck can kill momentum before the conversation even starts.</h2>
+      <p class="lede reveal">PitchWise helps you make your startup look as sharp as it actually is.</p>
+      <div style="display:flex;justify-content:center;margin-top:24px;">
+        <a class="btn btn-primary reveal" href="#get">Get Pitch OS <svg class="arrow" width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7.5h8M7.5 4l3.5 3.5L7.5 11"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FINAL CTA ===================== -->
+<section class="section-pad" id="get">
+  <div class="container">
+    <div class="final reveal">
+      <span class="eyebrow no-rule" style="justify-content:center;">Get the Winning Deck Pattern System</span>
+      <h2 class="h-lg">Rebuild your pitch deck using proven fundraising patterns.</h2>
+      <p>Download the playbook, template, and AI rebuild files - or start with a free audit to see where your deck stands.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#get">Get Pitch OS</a>
+        <a class="btn btn-secondary" href="#free-audit">Get a Free Deck Audit</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <a class="brand" href="#top"><span class="mark" aria-hidden="true"></span> PitchWise</a>
+    <span class="copyright" style="margin-left:auto;">© 2026 PitchWise. All rights reserved.</span>
+    
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
